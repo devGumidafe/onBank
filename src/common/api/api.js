@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const url = `${process.env.BASE_API_URL}/movements`;
+const url = `${process.env.BASE_API_URL}`;
 
-export const getMovementList = () =>
-  axios.get(url)
+export const getAccount = (id) =>
+  axios.get(`${url}/account/${id}`)
     .then(response => {
       return response.data;
     })
@@ -11,8 +11,8 @@ export const getMovementList = () =>
       console.log(error)
     })
 
-export const getMovementListById = (accountId) =>
-  axios.get(url, { params: { accountId } })
+export const getAccountList = () =>
+  axios.get(`${url}/account-list`)
     .then(response => {
       return response.data;
     })

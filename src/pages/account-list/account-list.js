@@ -1,8 +1,8 @@
-import { getAccountList } from './account-list.api';
+import { getAccountList } from '../../common/api/api';
 import { addAccountRows } from './account-list.helpers';
 import { mapAccountListFromApiToViewModel } from './account-list-mappers';
 import { onUpdateField } from '../../common/helpers';
-import { history, routes } from '../../core/router';
+import { history } from '../../core/router';
 
 getAccountList().then(accountList => {
   const viewModelAccountList = mapAccountListFromApiToViewModel(accountList);

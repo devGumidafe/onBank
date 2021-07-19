@@ -7,7 +7,7 @@ export const mapMovementListFromApiToViewModel = (movemenList) => {
 const mapMovementFromApiToViewModel = (movement) => {
   return {
     id: movement.accountId,
-    amount: `${movement.amount}`,
+    amount: `${movement.amount} €`,
     balance: `${movement.balance} €`,
     description: movement.description,
     transaction: new Date(movement.transaction).toLocaleDateString(),

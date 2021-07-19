@@ -1,8 +1,10 @@
 import { onUpdateField, onSubmitForm, onSetError, onSetFormErrors, onSetValues } from '../../common/helpers/element.helpers';
 import { formValidation } from './account.validations';
-import { getAccount, insertAccount, updateAccount } from './account.api'
+import { insertAccount, updateAccount } from './account.api';
+import { getAccount } from '../../common/api/api';
 import { history, routes } from '../../core/router';
-import { mapAccountFromApiToViewModel, mapAccountFromViewModelToApi } from './account.mappers';
+import { mapAccountFromViewModelToApi } from './account.mappers';
+import { mapAccountFromApiToViewModel } from '../../common/mappers/mappers';
 
 const params = history.getParams();
 const isEditMode = Boolean(params.id);
