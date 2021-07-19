@@ -1,0 +1,9 @@
+server/node_modules
+server/package-lock.json
+
+dist/
+.cache/
+.parcel-cache/
+
+node_modules/
+package-lock.json
