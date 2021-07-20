@@ -99,10 +99,10 @@ onSubmitForm('transfer-button', () => {
 
     if (result.succeeded) {
       onSave();
-      console.log({ transfer })
-      /* insertTransfer(transfer).then(result => {
+
+      insertTransfer(transfer).then(result => {
         history.push(routes.accountList);
-      }) */
+      })
     }
   });
 });

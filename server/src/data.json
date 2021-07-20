@@ -118,5 +118,30 @@
       "accountId": "3"
     }
   ],
-  "transfer": []
+  "transfer": [
+    {
+      "id": 1626791278387,
+      "senderAccount": "2",
+      "receiverAccount": "ES3912341234250123456789",
+      "name": "Gumidafe Socorro",
+      "amount": "500",
+      "concept": "Pago Luz",
+      "notes": "Recibo mes Junio",
+      "transaction": "2021-07-20T14:27:58.387Z",
+      "realTransaction": "20/08/2021",
+      "email": "sgumidafe@gmail.com"
+    },
+    {
+      "id": 1626791350319,
+      "senderAccount": "1",
+      "receiverAccount": "ES39123412342501234567899",
+      "name": "Jose",
+      "amount": "100",
+      "concept": "Pago seguro",
+      "notes": "Otros",
+      "transaction": "2021-07-20T14:29:10.319Z",
+      "realTransaction": "2021-07-20T14:29:10.319Z",
+      "email": ""
+    }
+  ]
 }
