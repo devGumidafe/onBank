@@ -15,7 +15,7 @@ getAccountList().then(accountList => {
 
 let transfer = {
   id: '',
-  senderAccount: '',
+  senderAccount: accountId,
   receiverAccount: '',
   name: '',
   amount: '',
