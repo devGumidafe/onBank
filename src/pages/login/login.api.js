@@ -8,5 +8,5 @@ export const isValidLogin = (login) =>
       return response.data;
     })
     .catch(error => {
-      
+      console.log(error);
     })
